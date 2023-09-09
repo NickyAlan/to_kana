@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>ToKana</h1>
+      <div class="setting">
+        <span><input type="checkbox" value="alwaytop" id="alwaytop" checked><label>top window</label></span>
+        <span><input type="checkbox" value="autocopy" id="autocopy" checked><label>auto copy</label></span>
+        <span><a href="https://github.com/NickyAlan/to_kana" target="_blank">about</a></span>
+      </div>
+      <form class="row" id="greet-form">
+        <input id="greet-input" spellcheck="false" placeholder="konnichiwa..." autocomplete="off" />
+        <select id="conversion-type">
+          <option value="hiragana">Hiragana</option>
+          <option value="katakana">Katakana</option>
+        </select>
+      </form>
+
+      <div id="parent-container">
+        <!-- Dynamically created div elements will be appended here -->
+      </div>
+    </div>
+  </body>
+</html>

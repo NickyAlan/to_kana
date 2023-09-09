@@ -1,0 +1,49 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "to_kana",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "window": {
+        "setAlwaysOnTop": true
+      },
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.dev",
+      "icon": [
+        "icons/k32x32.png",
+        "icons/k128x128.png",
+        "icons/k128x128.png",
+        "icons/kicon.icns",
+        "icons/kicon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": false,
+        "title": "ToKana",
+        "width": 800,
+        "height": 400
+      }
+    ]
+  }
+}
