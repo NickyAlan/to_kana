@@ -24,7 +24,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "to.kana.convert.app",
       "icon": [
         "icons/k32x32.png",
         "icons/k128x128.png",
