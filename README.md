@@ -1,7 +1,32 @@
-# Tauri + Vanilla
+# ToKana
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+- **ToKana** is a simple application that helps you convert Romanized Japanese text to Hiragana or Katakana characters. 
+- It can be a handy tool for learners of the Japanese language.
 
-## Recommended IDE Setup
+- Watch how this project make in [this video](https://youtu.be/KQiiscTnsVM)
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+![Screenshot (966)](https://github.com/NickyAlan/to_kana/assets/97141979/caf1441d-91bc-4fa8-be2a-524699267de6)
+
+## Features
+
+- Convert Romanized Japanese text to Hiragana or Katakana.
+- Handle ambiguous Kana characters (e.g., "wa" vs. "ha" or "su" vs. "tsu").
+- Easy-to-use interface.
+
+## Installation
+- Download executable for your platform from the [Releases](https://github.com/NickyAlan/to_Kana/releases) page.
+
+## Usage
+
+1. Launch the **To_Kana** application.
+2. Enter or paste Romanized Japanese text into the input field.
+3. It will automate convert it.
+4. The converted text will be displayed in Hiragana or Katakana in the output field.
+
+## Building from Source
+
+If you prefer to build the application from source. Clone this repository:
+
+   ```bash
+   git clone https://github.com/NickyAlan/to_kana.git
+   ```
