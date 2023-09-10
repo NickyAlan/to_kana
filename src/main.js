@@ -9,28 +9,37 @@ let alwaytop;
 let autocopy;
 
 async function to_kana_js() {
-  // Remove all child elements from the parent container
-  while (parentContainer.firstChild) {
-    parentContainer.removeChild(parentContainer.firstChild);
-  }
-  try {
-    kana_array = await invoke("to_kana_fn", { name: greetInputEl.value, convertType: converType.value });
-    // auto copy first response
-    if (autocopy.checked) {
-      copyTextToClipboard(kana_array[0]);
-    }
-    if (kana_array[0] != '') {
-      kana_array.forEach((item, idx) => {
-        const divElement = document.createElement('div');
-        divElement.textContent = item;
-        divElement.addEventListener("click", () => {
-          copyTextToClipboard(item);
+  if (greetInputEl.value == "" ) {
+    removeDiv()
+  } else {
+    try {
+      kana_array = await invoke("to_kana_fn", { name: greetInputEl.value, convertType: converType.value });
+      if (kana_array[0] != '') {
+        // remove old text
+        removeDiv()
+        // auto copy first response
+        if (autocopy.checked) {
+          copyTextToClipboard(kana_array[0]);
+        }
+        kana_array.forEach((item, idx) => {
+          const divElement = document.createElement('div');
+          divElement.textContent = item;
+          divElement.addEventListener("click", () => {
+            copyTextToClipboard(item);
+          })
+          parentContainer.appendChild(divElement);
         })
-        parentContainer.appendChild(divElement);
-      })
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
     }
-  } catch (error) {
-    console.error("An error occurred:", error);
+  }
+}
+
+function removeDiv() {
+  // Remove all child elements from the parent containers
+  while (parentContainer.firstChild) {
+      parentContainer.removeChild(parentContainer.firstChild);
   }
 }
 
@@ -71,7 +80,6 @@ window.addEventListener("DOMContentLoaded", () => {
   alwaytop.addEventListener("click", () => {
     setWindowAlwaysOnTop(alwaytop.checked);
   })
-  
   document.querySelector("#greet-form").addEventListener("keyup", (e) => {
     e.preventDefault();
     to_kana_js();
