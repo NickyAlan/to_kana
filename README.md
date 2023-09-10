@@ -22,6 +22,7 @@
 2. Enter or paste Romanized Japanese text into the input field.
 3. It will automate convert it.
 4. The converted text will be displayed in Hiragana or Katakana in the output field.
+5. Click to Copy
 
 ## Building from Source
 
