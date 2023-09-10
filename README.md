@@ -14,7 +14,7 @@
 - Easy-to-use interface.
 
 ## Installation
-- Download executable for your platform from the [Releases](https://github.com/NickyAlan/to_kana/releases) page.
+- Download executable for your platform from the [Releases](https://github.com/NickyAlan/to_kana/releases/tag/kana) page.
 
 ## Usage
 
