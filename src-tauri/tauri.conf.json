@@ -41,8 +41,8 @@
         "fullscreen": false,
         "resizable": false,
         "title": "ToKana",
-        "width": 800,
-        "height": 400
+        "width": 670,
+        "height": 350
       }
     ]
   }
