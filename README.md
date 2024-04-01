@@ -3,7 +3,6 @@
 - **ToKana** is a simple application that helps you convert Romanized Japanese text to Hiragana or Katakana characters. 
 - It can be a handy tool for learners of the Japanese language.
 - Write in Rust(Tauri) and JavaScript(Vanilla)
-- Watch how this project make in [this video](https://youtu.be/kw8daXiPRwI)
 
 ![Screenshot (966)](https://github.com/NickyAlan/to_kana/assets/97141979/caf1441d-91bc-4fa8-be2a-524699267de6)
 
